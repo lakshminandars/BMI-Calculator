@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.body {
+    background: linear-gradient( plum,lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    /* background-color: orange; */
+
+    /* background-image: url('https://i.pinimg.com/originals/1a/ee/5c/1aee5c344846f449350feae457ea350e.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box {
+    background:linear-gradient(lightblue , plum) ;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+ 
+.input {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input .form-control {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 6px;
+}
+
+.label {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gender {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gender h5 {
+    font-size: 20px;
+    color: #333;
+}
+
+.gender input {
+    margin-left: 10px;
+
+}
+
+.gender span {
+    font-size: 18px;
+    text-align: center;
+}
+
+.containerHW {
+    margin-bottom: 20px;
+}
+
+.containerHW h5 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.containerHW label {
+    font-size: 16px;
+    color: #666;
+}
+
+.containerHW input {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.row3 .btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    margin: 0 auto;
+    background-color:plum;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.row3 .btn:hover {
+    background-color: rgb(206, 117, 206);
+}
+
+.row4 {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(233, 133, 233);
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.result h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 18px;
+    color: black;
+}
+
+

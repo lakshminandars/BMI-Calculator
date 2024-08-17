@@ -10,70 +10,67 @@
 </head>
 <body class="body">
     <div class="container">
-        <div class="row">
-       
+        <div class="row align-items-center">
            
-                
-                <div class="col-6">
-                    <img width="100%" src="https://bmicalculator.care/wp-content/uploads/2024/02/BMI-Calculator-01.png" alt="">
-                </div>
-                <div class="col-6">
-                    <div class="box">
-            <h1 class="text text-center fw-bold">BMI Calculator</h1>
-          
-
-                <div class="input"> 
-                    <label class="text m-1 fw-bold fs-4" for="age">Age</label> <br>
-                    <input type="number" class="form-control w-35  " name="" id="age">
-                </div>
-<br>
-                <div class="row2 border border-2 m-2 ">
-                    <div class="col-6">
-                        <div class="gender">
-                            <h5 >Select your Gender</h5> <br>
-                             <label for="">
-                                 <input type="radio" name="gender" value="male" id="">
-                                 <span>Male</span> <br>
-                                 <input type="radio" name="gender" value="male" id="">
-                                 <span>Female</span>
-                             </label>
-                         </div>
-                    </div>
-    <div class="col-6">
-                            
-         <!--  -->
-         <div class="containerHW">
-            <div class="inputH">
-                <h5>Enter Height & Weight</h5>
-                <label for="height">Height(cm)</label>
-                <input class="form-control" type="number" name="" id="height" required>
-            </div><br>
-            <div class="inputH">
-                <label for="weight">Weight(kg)</label>
-                <input class="form-control" type="number" name="" id="weight" required>
-            </div>
-
-        </div>
-    </div>
-</div>
-                <div class="row3">
-                <button class="btn  btn-lg " id="submit" onclick="calculateBMI()">Calculate BMI</button>
-            </div>
-
-               <div class="row4">
-               
-<div class="result">
-    <h2>BMI Result</h2>
-    <p>Your BMI is : <span id="bmi-result">0</span></p>
-    <p>Status : <span id="bmi-status"></span></p>
-</div>
-               </div>
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img width="100%" src="https://bmicalculator.care/wp-content/uploads/2024/02/BMI-Calculator-01.png" alt="">
             </div>
             
-       
+           
+            <div class="col-12 col-md-6">
+                <div class="box p-4">
+                    <h1 class="text text-center fw-bold">BMI Calculator</h1>
+
+                    <!-- Age Input -->
+                    <div class="input mb-3">
+                        <label class="text m-1 fw-bold fs-4" for="age">Age</label>
+                        <input type="number" class="form-control w-100" id="age">
+                    </div>
+
+                    <!-- Gender Selection -->
+                    <div class="row2 border border-2 m-2 p-3">
+                        <h5>Select your Gender</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="male" id="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="female" id="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <!-- Height & Weight Input -->
+                    <div class="containerHW mb-4">
+                        <h5>Enter Height & Weight</h5>
+                        <div class="inputH mb-3">
+                            <label for="height">Height(cm)</label>
+                            <input class="form-control" type="number" id="height" required>
+                        </div>
+                        <div class="inputH">
+                            <label for="weight">Weight(kg)</label>
+                            <input class="form-control" type="number" id="weight" required>
+                        </div>
+                    </div>
+
+                    <!-- Calculate Button -->
+                    <div class="row3 text-center mb-4">
+                        <button class="btn btn-primary btn-lg w-100" id="submit" onclick="calculateBMI()">Calculate BMI</button>
+                    </div>
+
+                    <!-- BMI Result -->
+                    <div class="row4">
+                        <div class="result">
+                            <h2>BMI Result</h2>
+                            <p>Your BMI is : <span id="bmi-result">0</span></p>
+                            <p>Status : <span id="bmi-status"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    
+
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
